@@ -1,7 +1,12 @@
 const vm = new Vue({
     el: "#app",
     data: {
-        teste: "Hello Word"
+        cor: 'branco'
     },
-    methods: {}
+    methods: {
+        mudarCor(c){
+            this.cor = c
+
+        }
+    }
 })
