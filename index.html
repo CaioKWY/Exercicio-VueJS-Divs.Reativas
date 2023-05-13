@@ -12,12 +12,14 @@
    
     <div id="app">
         <div class="borda d-principal" :class="cor">
-            Cor: {{ cor }}
+            Cor: {{ cor }} <br/>
+            Posição X do mouse: {{posiçãoX}} <br/>
+            Posição Y do mouse: {{posiçãoY}}
         </div>
         <hr>
         <div class="borda d-sec" @mouseout="mudarCor('branco')" @click="mudarCor('verde')"></div>
-        <div class="borda d-sec" @mouseout="mudarCor('vermelho')" @mouseover="mudarCor('azul')"></div>
-        <div class="borda d-sec"></div>
+        <div class="borda d-sec" @mouseout="mudarCor('vermelho')" @mouseover="mudarCor('azul')" @click="mudarCor('yellow')"></div>
+        <div class="borda d-sec" @mousemove="coordenadas($event)"></div>
     
 
    </div>
