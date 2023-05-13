@@ -1,0 +1,16 @@
+.borda{
+    border: 1px solid;
+}
+
+.d-principal{
+
+    width: 280px;
+    height: 280px;
+}
+
+.d-sec{
+
+    width: 89.5px;
+    height: 89.5px;
+    display: inline-block;
+}
